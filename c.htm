@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <style>
+
+        .transform-sec {
+    text-align: center;
+    padding: 70px 20px;
+    background: #f4f7f5;
+}
+
+.t-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #222;
+}
+
+.t-subtitle {
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.t-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 60px;
+    justify-items: center;
+}
+
+/* CARD */
+.t-card {
+    width: 100%;
+    max-width: 360px;
+}
+
+.t-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* BEFORE / AFTER IMAGE */
+.img-box img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.img-tag {
+    display: block;
+    margin-top: 8px;
+    font-size: 13px;
+    color: #444;
+}
+
+.green {
+    color: #0a9e61;
+    font-weight: 600;
+}
+
+/* MIDDLE HEART AREA */
+.img-mid {
+    text-align: center;
+}
+
+.img-mid .heart {
+    width: 30px;
+    opacity: 0.7;
+}
+
+.duration {
+    font-size: 14px;
+    margin-top: 4px;
+    color: #444;
+}
+
+/* BOTTOM INFO */
+.t-info {
+    margin-top: 20px;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.result {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.time {
+    font-size: 14px;
+    color: #777;
+    margin-top: -6px;
+}
+
+/* JOIN LINE */
+.join-line {
+    margin-top: 40px;
+    color: #0a9e61;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/* RESPONSIVE IMPROVEMENTS */
+@media(max-width: 600px) {
+    .t-images {
+        gap: 12px;
+    }
+
+    .img-box img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .t-card {
+        max-width: 320px;
+    }
+}
+
+     </style>
+</head>
+<body>
+<section class="transform-sec">
+    <h2 class="t-title">Real Transformations, Real Results</h2>
+    <p class="t-subtitle">
+        These are just a few examples of the incredible transformations our members achieve
+    </p>
+
+    <div class="t-grid">
+
+        <!-- CARD 1 -->
+        <div class="t-card">
+            <div class="t-images">
+                <div class="img-box">
+                    <img src="image/1.jpg">
+                    <span class="img-tag">BEFORE</span>
+                </div>
+
+                <div class="img-mid">
+                    <img src="https://cdn-icons-png.flaticon.com/512/833/833472.png" class="heart">
+                    <p class="duration">4 months</p>
+                </div>
+
+                <div class="img-box">
+                    <img src="image/3.jpg">
+                    <span class="img-tag green">AFTER</span>
+                </div>
+            </div>
+
+            <div class="t-info">
+                <h3 class="name">Vinita Joshi</h3>
+                <p class="result green">-15 kg</p>
+                <p class="time">in 4 months</p>
+            </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="t-card">
+            <div class="t-images">
+                <div class="img-box">
+                    <img src="image/2.jpg">
+                    <span class="img-tag">BEFORE</span>
+                </div>
+
+                <div class="img-mid">
+                    <img src="https://cdn-icons-png.flaticon.com/512/833/833472.png" class="heart">
+                    <p class="duration">6 months</p>
+                </div>
+
+                <div class="img-box">
+                    <img src="image/4.jpg">
+                    <span class="img-tag green">AFTER</span>
+                </div>
+            </div>
+
+            <div class="t-info">
+                <h3 class="name">Soni Verma</h3>
+                <p class="result green">PCOD Managed</p>
+                <p class="time">in 6 months</p>
+            </div>
+        </div>
+
+    </div>
+
+    <p class="join-line">✔ Join 37,500+ women who transformed their lives</p>
+</section>
+
+
+</body>
+</html>
